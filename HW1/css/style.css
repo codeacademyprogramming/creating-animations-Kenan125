@@ -1,0 +1,123 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, background 2s;
+}
+
+.box:hover{
+    background: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.image{
+    width: 10%;
+    height: 10%;
+    transition: width 2s, height 2s;
+    
+}
+
+.image:hover{
+    width: 20%;
+    height: 20%;
+}
+
+.button{
+    margin: 10px;
+    width: 10rem;
+    height: 5rem;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    transition:background 2s, color 2s;
+}
+.button:hover{
+    background: red;
+    color: white;
+}
+
+.box2{
+    position: relative;
+    width: 20px;
+    height: 100px;
+    background: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 2s, height 2s, background 2s;
+
+    
+}
+.box2 p{
+    position: absolute;
+    display: flex;
+    transition: opacity 4s;
+    opacity: 0.0;
+    
+}
+
+.box2:hover{
+    
+    
+    width: 200px;
+    
+}
+
+.box2 p:hover{
+    opacity: 1;
+}
+
+
+.box3{
+    position: relative;
+    margin: 20px;
+    width: 50rem;
+    height: 50rem;
+    
+   
+}
+.box4{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: red;
+    transition:background 2s, ;
+    animation: box4 4s infinite;
+
+}
+
+@keyframes box4 {
+    0%{
+        left: 0;
+        top: 0;
+        background: red;
+    }
+    
+    25%{
+        left: 50%;
+        top: 0;
+        background: yellow;
+    }
+    50%{
+        left: 50%;
+        top: 50%;
+        background: blue;
+
+    }
+
+    75%{
+        left: 0;
+        top: 50%;
+        background: green;
+    }
+    100%{
+        left: 0;
+        top:  0;
+        background: red;
+    }
+
+}
